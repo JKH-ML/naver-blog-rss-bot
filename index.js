@@ -3,9 +3,12 @@ const Parser = require('rss-parser');
 
 const BLOG_NAME = process.env.BLOG_NAME;
 const RSS_URL = `https://rss.blog.naver.com/${BLOG_NAME}.xml`;
-const SUPABASE_URL = process.env.SUPABASE_URL;
+const SUPABASE_PROJECT_ID = process.env.SUPABASE_PROJECT_ID;
+const SUPABASE_URL = `https://${SUPABASE_PROJECT_ID}.supabase.co`;
 const SUPABASE_ANON_KEY = process.env.SUPABASE_ANON_KEY;
-const DISCORD_WEBHOOK_URL = process.env.DISCORD_WEBHOOK_URL;
+const DISCORD_WEBHOOK_ID = process.env.DISCORD_WEBHOOK_ID;
+const DISCORD_WEBHOOK_TOKEN = process.env.DISCORD_WEBHOOK_TOKEN;
+const DISCORD_WEBHOOK_URL = `https://discord.com/api/webhooks/${DISCORD_WEBHOOK_ID}/${DISCORD_WEBHOOK_TOKEN}`;
 
 const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 const parser = new Parser();
