@@ -30,6 +30,7 @@ A GitHub Actions-powered bot that monitors a Naver blog RSS feed and sends Disco
 2. Go to Settings > Secrets and variables > Actions
 3. Add the following secrets:
    - `BLOG_NAME`: Your Naver blog name (the part in the RSS URL)
+   - `SUPABASE_URL`: Your Supabase project URL
    - `SUPABASE_ANON_KEY`: Your Supabase anon key
    - `DISCORD_WEBHOOK_URL`: Your Discord webhook URL
 

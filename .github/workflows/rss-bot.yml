@@ -26,6 +26,7 @@ jobs:
     - name: Run RSS bot
       env:
         BLOG_NAME: ${{ secrets.BLOG_NAME }}
+        SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
         SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
         DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
       run: npm start

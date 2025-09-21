@@ -3,7 +3,7 @@ const Parser = require('rss-parser');
 
 const BLOG_NAME = process.env.BLOG_NAME;
 const RSS_URL = `https://rss.blog.naver.com/${BLOG_NAME}.xml`;
-const SUPABASE_URL = 'https://gcjwitsvfolvgvsyolde.supabase.co';
+const SUPABASE_URL = process.env.SUPABASE_URL;
 const SUPABASE_ANON_KEY = process.env.SUPABASE_ANON_KEY;
 const DISCORD_WEBHOOK_URL = process.env.DISCORD_WEBHOOK_URL;
 
